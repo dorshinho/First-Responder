@@ -1,0 +1,97 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.grid {
+    font-size: 0px;
+    text-align: justify;
+    position: relative;
+    background: #4183c4;
+
+}
+.grid::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+.grid > * {
+    display: inline-block;
+    width: 30%;
+    text-align: left; /* reset the text-alignment */
+    font-size: medium; /* reset the font size */
+    vertical-align: top;
+    transition: all .75s ease; /* optional, but cool */
+}
+@media (min-width: 765px){
+    .grid-2-765 > * { width: 48%; }
+}
+
+@media (min-width: 1024px){
+    .grid-3-1024 > * { width: 31.33%; }
+}
+.comment {
+    min-height: 12em;
+    width: 75%;
+}
+
+.section {
+    margin-top: 20px;
+    min-height: 500px;
+
+}
+.left {
+    background: #4183c4;
+
+    margin-left: 5%;
+}
+.middle {
+    background: #4183c4;
+
+      
+}
+.right {
+    background: #4183c4;  ;
+
+}
+
+input {
+    border: 2px solid white;
+    width: 75%;
+    height: 35px;
+    background: #4183c4;
+    font-size: medium;
+    font-family: Helvetica;
+
+}
+
+h3 {
+    font-size: medium;
+font-family: 'PT Serif', serif;
+margin-bottom: -.5px;
+color: white;
+}
+
+input:not([type]), input[type="text"]
+{
+
+}
+
+::-webkit-input-placeholder {
+   color: #F9F8EE;
+   font-size: 13px;
+   text-indent: 8px;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #29333A;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #29333A;
+}
+
+:-ms-input-placeholder {
+   color: #29333A;
+}
+
